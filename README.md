@@ -16,11 +16,28 @@ We are proud of implementing the "Plan my trip" page so that an embedded map is 
 Since it was the first time developing a website for most of us, we have learned a great deal about using React, connecting to an external database and storing data in it, as well as about meaningful usage of Git.
 ## What's next for TravelBrain
 We would love to continue developing TravelBrain even after the end of LA Hacks 2023. Our next step would be to implement a user profile page, where users could display their saved itineraries and rate trips they have already taken in order to make future suggestions even more accurate. We have also noticed that there are not many social media platforms for sharing travel experiences. We could make our website a social media platform where users can export, share and comment on the suggested itineraries. We are also considering extending our idea into a mobile application.
+
 ## Installation
 To run TravelBrain locally, follow these steps:
 ```bash
    git clone https://github.com/theopatsis/travelbrain.git
    cd travelbrain
 ```
-To activate our backend: 
+Open two separate terminals to activate both frontend and backend
 
+To activate the backend: 
+```bash
+   cd backend
+   npm install
+   npm start
+```
+
+To activate the frontend: 
+```bash
+   cd backend
+   npm install
+   npm run dev
+```
+## Additional usage comments 
+
+Everytime you create a new account you have to register first. The password will be valid only when all requirements disappear from the screen. After you register, you can complete our travel preference survey. Your responses will be recorded and every time you use our app after that you can just login and go straight to the plan my trip page. 
