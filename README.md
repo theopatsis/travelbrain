@@ -21,5 +21,6 @@ To run TravelBrain locally, follow these steps:
 ```bash
    git clone https://github.com/theopatsis/travelbrain.git
    cd travelbrain
+```
 To activate our backend: 
 
