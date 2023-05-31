@@ -38,6 +38,8 @@ To activate the frontend:
    npm install
    npm run dev
 ```
-## Additional usage comments 
 
+Now you can click on the local host link generated and run our app on your browser. 
+
+## Additional usage comments 
 Everytime you create a new account you have to register first. The password will be valid only when all requirements disappear from the screen. After you register, you can complete our travel preference survey. Your responses will be recorded and every time you use our app after that you can just login and go straight to the plan my trip page. 
