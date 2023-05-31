@@ -16,3 +16,7 @@ We are proud of implementing the "Plan my trip" page so that an embedded map is 
 Since it was the first time developing a website for most of us, we have learned a great deal about using React, connecting to an external database and storing data in it, as well as about meaningful usage of Git.
 ## What's next for TravelBrain
 We would love to continue developing TravelBrain even after the end of LA Hacks 2023. Our next step would be to implement a user profile page, where users could display their saved itineraries and rate trips they have already taken in order to make future suggestions even more accurate. We have also noticed that there are not many social media platforms for sharing travel experiences. We could make our website a social media platform where users can export, share and comment on the suggested itineraries. We are also considering extending our idea into a mobile application.
+## How to install and run it
+To get started, follow these steps: 
+```bash
+   git clone https://github.com/your-username/your-repository.git
