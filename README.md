@@ -18,12 +18,8 @@ Since it was the first time developing a website for most of us, we have learned
 We would love to continue developing TravelBrain even after the end of LA Hacks 2023. Our next step would be to implement a user profile page, where users could display their saved itineraries and rate trips they have already taken in order to make future suggestions even more accurate. We have also noticed that there are not many social media platforms for sharing travel experiences. We could make our website a social media platform where users can export, share and comment on the suggested itineraries. We are also considering extending our idea into a mobile application.
 
 ## Installation
-To run TravelBrain locally, follow these steps:
-```bash
-   git clone https://github.com/theopatsis/travelbrain.git
-   cd travelbrain
-```
-Open two separate terminals to activate both frontend and backend
+To run TravelBrain locally, clone this repository using one of the available methods and navigate into the ```travelbrain``` directory.
+Open two separate terminals to activate both frontend and backend of the website.
 
 To activate the backend: 
 ```bash
@@ -34,12 +30,30 @@ To activate the backend:
 
 To activate the frontend: 
 ```bash
-   cd backend
+   cd frontend
    npm install
    npm run dev
 ```
 
-Now you can click on the local host link generated and run our app on your browser. 
+Now you can click on the local host link generated and run our app locally in your browser. 
+
+Note: Even after executing the following commands in separate windows, your local app will not function properly without several environmental variables stored securely in a ```.env``` file. Since the ```.env``` file contains secret keys specific to our app, we unfortunately cannot share it with you. Thus, in order to have a fully functional app, you will have to set up your own database on [mongoDB](https://www.mongodb.com), generate your own [OpenAI API key](https://platform.openai.com/account/api-keys), as well as your own [Google Maps Embed API key](https://developers.google.com/maps/documentation/embed/get-api-key). The usage of Google Maps Embed API is completely free of charge; however, you will need to make sure there are some OpenAI API credits available in your OpenAI account in order for TravelBrain to work properly. Below, we provide a template for our ```.env``` files. In order for the app to work, use the same names for environmental variables, but replace the comments by your own secret keys.
+
+Put this ```.env``` file in your ```travelbrain/frontend``` folder:
+```
+VITE_MAPS_KEY= // your Google Maps Embed API key
+VITE_BACKEND_URL=http://localhost:3001    // this is an example URL you will be running your backend on
+```
+Put this ```.env``` file in your ```travelbrain/backend``` folder:
+```
+MONGODB_URI= // your mongoDB connection string (accessible on the mongoDB dashboard)
+OPENAI_KEY= // your OpenAI API key
+```
+As an indicator of successful configuration of your backend, once you run ```npm start``` in backend, you should see the messages:
+```
+Server listening on port 3001    // assuming your backend runs on http://localhost:3001
+Connected to DB
+```
 
 ## Additional usage comments 
 Everytime you create a new account you have to register first. The password will be valid only when all requirements disappear from the screen. After you register, you can complete our travel preference survey. Your responses will be recorded and every time you use our app after that you can just login and go straight to the plan my trip page. 
